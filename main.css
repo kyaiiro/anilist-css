@@ -1,0 +1,193 @@
+/* background */
+:root{
+    --background: url("https://files.catbox.moe/mxglnt.jpg");
+}
+
+body {
+    background: #000000 var(--background) center/100% fixed !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% auto !important;
+}
+
+.hohDownload {
+    display: none;
+}
+
+.banner {
+    background-image: none !important;
+    background-color: rgb(36, 37, 56, 0) !important;
+}
+
+.banner .shadow {
+    background: none !important;
+}
+
+.home .activity-feed-wrap .section-header .el-dropdown-menu__item:hover, .user .activity-feed-wrap .section-header .el-dropdown-menu__item:hover{
+  background: rgb(var(--color-foreground)) !important;
+}
+
+.activity-feed-wrap .section-header .el-dropdown-menu__item{
+padding-bottom: 12px  !important;
+border-radius: 5px 5px 0px 0px !important;
+}
+
+.el-dropdown{
+padding-right: 5px !important;
+}
+
+.el-dropdown-menu.el-popper{
+margin-right: 0px !important;
+}
+
+@media (min-width: 1540px){
+.activity-feed{
+  display: inherit !important;
+}
+
+.activity-feed > .activity-entry:not(.activity-message, .activity-text) .details{
+  max-width: 85%;
+  padding: 0px;
+  transition: all 1s;
+}
+
+.activity-feed > .activity-entry:not(.activity-message, .activity-text) .cover{
+  padding-right: 20px !important;
+}
+
+.details .status{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.activity-feed > .activity-entry:not(.activity-message, .activity-text) .wrap:hover .details{
+  max-width: inherit;
+  padding: inherit;
+}
+
+.activity-feed > .activity-entry:not(.activity-message, .activity-text) .wrap:hover .details .status{
+  white-space: inherit;
+  overflow: inherit;
+  text-overflow: inherit;
+}
+
+.list.small{
+  max-width: 810px;
+}
+.list{
+  gap: 14px;
+}
+}
+
+.wrap .footer{
+  display: grid;
+  justify-content: center;
+  background: linear-gradient(0deg, rgb(var(--color-footer-background)) 0%, rgb(var(--color-footer-background),0) 200%) !important; 
+}
+
+.wrap .footer:hover{
+    background: linear-gradient(0deg, rgb(var(--color-footer-background)) 0%, rgb(var(--color-footer-background),0) 300%) !important; 
+}
+
+.wrap .footer .container .theme-selector{
+  display: none;
+}
+
+.overview {
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 12px, 12px, 12px, 12px;
+}
+
+.list-stats.content-wrap:hover{
+  height: 100%;
+  max-height: calc(100% + 35px);
+}
+
+.list-stats.content-wrap:hover .footer{
+opacity: 100%;
+}
+
+.list-stats.content-wrap{
+height: calc(160.5px - 35px);
+transition: all 1s;
+margin-bottom: 0px !important;
+}
+
+.activity-feed-wrap, .activity-feed-wrap + div {
+  margin-top: 25px;
+}
+
+.nav.nav-unscoped{
+  background: rgba(0, 0, 0, 0.2) !important;
+  padding-left: 100px !important;
+  padding-right: 100px !important;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 5px;
+}
+
+.nav.nav-unscoped:hover{
+  background: rgb(79, 49, 87) !important;
+} 
+
+@media (min-width: 1040px) and (max-width: 1540px){
+.nav.nav-unscoped{
+  max-width: 1040px !important;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+}
+
+.quick-search{
+    background: rgba(var(--color-background),.6) !important;
+    max-width: inherit;
+}
+
+.quick-search .result{
+  grid-template-columns: 1fr 1fr;
+}
+
+.quick-search .view-all{
+  background: rgb(var(--color-background),.4);
+    transition: all 1s;
+}
+
+.quick-search .view-all:hover{
+  background: rgb(var(--color-background),.8)
+}
+
+.result-col >.title{
+    background: rgb(var(--color-foreground));
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    border-radius: 5px 5px 0px 0px;
+    padding: 5px 0px !important;
+}
+
+.header-wrap{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+@media (min-width: 1040px){
+    .header-wrap .nav-wrap{
+        border-radius: 5px;
+        width: 1320px;
+    }
+}
+
+@media (min-width: 1040px) and (max-width: 1040px){
+    .header-wrap .nav-wrap{
+        border-radius: 5px;
+        width: 1040px;
+    }
+}
+
+.nav-wrap .nav.container a[href*="/stats/"],
+.nav-wrap .nav.container a[href*="/reviews"],
+.nav-wrap .nav.container a[href*="/submissions"] {
+    display: none !important;
+}
